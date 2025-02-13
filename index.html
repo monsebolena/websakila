@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Sakila</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/app.js"></script>
+    <script src="js/app.js" defer></script>
 </head>
 
 <body>
@@ -18,10 +18,21 @@
             <aside>
                 <ul>
                     <li id="peliculas">Peliculas</li>
+                    <li id="actores">Actores
+                        <ul id="acciones-lista">
+                            <li id="new_actor">New</li>
+                            <li id="list_actors">Listar</li>
+                        </ul>
+                    </li>
                 </ul>
             </aside>
-            <section id="contenido">
-
+            <section >
+                <div id="contenido"></div>
+                <div id="form_new_actor" hidden>
+                    <input type="text" name="" id="name" placeholder="Nombre del actor">
+                    <input type="text" name="" id="last_name" placeholder="Apellido del actor">
+                    <button id="save_actor">Guardar</button>
+                </div>
             </section>
         </main>
 
